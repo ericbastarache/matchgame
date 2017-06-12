@@ -1,6 +1,6 @@
+import { SET_TILE, NEW_GAME } from '../actions';
+
 const INITIAL_STATE = [];
-const SET_TILE = 'SET_TILE';
-const NEW_GAME = 'NEW_GAME';
 
 export default function (state = INITIAL_STATE, action) {
   switch(action.type) {
