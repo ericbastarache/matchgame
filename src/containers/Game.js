@@ -6,6 +6,7 @@ import Tile from '../components/Tile/Tile';
 class Game extends Component {
   constructor () {
     super ();
+    this.boardsize = 5;
   }
 
   componentWillMount () {
@@ -18,7 +19,7 @@ class Game extends Component {
 }
 
 mapStateToProps = (props) => {
-  
+  return props;
 }
 
-export default Game;
+export default connect(mapStateToProps)(Game);
