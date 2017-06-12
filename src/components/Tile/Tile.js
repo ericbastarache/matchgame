@@ -5,8 +5,8 @@ const Tile = (props) => {
   return (
     <div>
       {
-        props.boardSize.map(size => {
-          return <div className="tile"></div>
+        props.boardSize.map((size, index) => {
+          return <div className="tile" key={index}></div>
         })
       }
     </div>
