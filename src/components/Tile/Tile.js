@@ -3,13 +3,7 @@ import './Tile.css';
 
 const Tile = (props) => {
   return (
-    <div>
-      {
-        props.boardSize.map((size, index) => {
-          return <div className="tile" key={index}></div>
-        })
-      }
-    </div>
+    <div className="tile">{props.tilenumber}</div>
   );
 }
 
