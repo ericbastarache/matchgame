@@ -1,12 +1,10 @@
+import { LOST_GAME, NEW_GAME, INCREMENT_SCORE } from '../actions';
+
 const INITIAL_STATE = {
   lost: false,
   score: 0,
   highScore: 0
 }
-
-const LOST_GAME = 'LOST_GAME';
-const NEW_GAME = 'NEW_GAME';
-const INCREMENT_SCORE = 'INCREMENT_SCORE';
 
 updateHighScore = ({score, highScore}) => {
   return score > highScore ? score: highScore;
