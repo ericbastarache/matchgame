@@ -6,7 +6,7 @@ const INITIAL_STATE = {
   highScore: 0
 }
 
-updateHighScore = ({score, highScore}) => {
+const updateHighScore = ({score, highScore}) => {
   return score > highScore ? score: highScore;
 }
 
@@ -36,5 +36,4 @@ export default function(state = INITIAL_STATE, action) {
         ...state
       }
   }
-  return state;
 }
