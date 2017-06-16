@@ -24,7 +24,7 @@ class Game extends Component {
   }
 
   setClickable () {
-    //this.props.setActiveTile();
+
   }
 
   startGame = () => {
