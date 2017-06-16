@@ -3,7 +3,13 @@ import './Tile.css';
 
 const Tile = (props) => {
   return (
-    <div className="tile">{props.tilenumber}</div>
+    <div className="col-md-4 no-pad">
+      <div className="tile" onClick={props.handleClick}>
+        {
+          props.tilenumber
+        }
+      </div>
+    </div>
   );
 }
 
