@@ -3,3 +3,26 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+button.start-button {
+  position: relative;
+  left: 48%;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+button.start-button:hover {
+  color: #fff;
+  background-color: #000;
+  transition: 0.2s ease-in-out;
+}
+
+button.start-button:active {
+  background-color: #ff0000;
+}
+
+button.start-button:focus {
+  outline: none;
+}
